@@ -558,6 +558,8 @@ color: #D8D7D7;
 
 .location iframe{
     filter: grayscale();
+    mix-blend-mode: luminosity;
+    box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 }
 
 .location-wrap{
