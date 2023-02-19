@@ -6,6 +6,7 @@
 body{
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
+   background-color: #F6F6F6;
 }
 
 a {
@@ -49,18 +50,18 @@ button{
     display: flex;
 }
 
-.navigation{
+.header .navigation{
     height: 78px;
 }
 
-.navigation-list{
+.header .navigation-list{
     height: 100%;
     display: flex;
     gap: 32px;
     align-items: center;
 }
 
-.navigation-list .item{
+.header .navigation-list .item a{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -71,6 +72,7 @@ button{
 
     color: #F7F7F7;
 }
+
 .header .title{
     font-weight: 500;
     font-size: 20px;
@@ -96,7 +98,7 @@ text-transform: uppercase;
 color: #D8D7D7;
 }
 
-.logo-wrap{
+.header .logo-wrap{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,6 +551,8 @@ color: #D8D7D7;
 }
 
 .location-container{
+    padding-left: 64px;
+    padding-right: 64px;
     display: flex;
 }
 
@@ -587,7 +591,7 @@ color: #D8D7D7;
 
 
 
-.location .address{
+.location .address a{
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -624,4 +628,81 @@ color: #D8D7D7;
     text-transform: uppercase;
 
     color: #121212;
+}
+
+/* -----------------Footer-----------------*/
+
+.footer{
+    padding-top: 44px;
+    padding-bottom: 80px;
+
+    width: 100%;
+
+    background: transparent;
+    border-bottom:  0.5px solid rgba(18, 18, 18, 0.3);
+    
+}
+
+.footer-container{
+    display: flex;
+}
+
+.footer .navigation{
+}
+
+.footer .navigation-list{
+    height: 100%;
+    display: flex;
+    gap: 32px;
+    
+}
+
+.footer .navigation-list .item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+.footer .title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+
+.footer .suptitle {
+    font-weight: 400;
+
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height, or 125% */
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+
+.footer .logo-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 370px;
+}
+
+.footer .social-list{
+    margin-left: auto;
+    display: flex;
+    gap: 16px;
 }

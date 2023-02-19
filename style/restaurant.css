@@ -1,0 +1,129 @@
+/* -----------------HERO-----------------*/
+.header{
+    position: static;
+    transform: none;
+    background-color: #fff;
+}
+
+.header .navigation-list .item a{
+    color: #121212;
+}
+
+.header .title{
+    color: #121212;
+
+}
+
+.header .suptitle {
+    color: #121212;
+
+}
+
+.header .social-list{
+    color: #121212;
+
+}
+/* -----------------HERO-----------------*/
+
+.hero-reatautant-container{
+    display: flex;
+    overflow: hidden;
+
+
+}
+
+.hero-restaurant .title{
+    margin-top: 204px;
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 90px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+ 
+.hero-restaurant-wrap  .button-wrap{
+    display: flex;
+    gap: 14px;
+}
+
+.hero-restaurant-wrap button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 167px;
+    height: 42px;
+
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #121212;
+    background-color: transparent;
+}
+
+
+.hero-restaurant-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 705px;
+}
+
+.restaurant-gallery{
+    overflow: hidden;
+    width: 671px;
+}
+.restaurant-gallery .button-wrap{
+    display: flex;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.restaurant-gallery .button-wrap button{
+    border:none;
+    background-color: transparent; 
+}
+.slider-restaurant{
+    position: relative;
+    right: 0px;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 32px;
+    transition: all 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.img-restaurant-slider{
+    width: 436px;
+    height: 580px;
+}
+
+.hero-restaurant-wrap .text{
+    margin-top: auto;
+    margin-bottom: 18px;
+
+    width: 338px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #121212;
+    }
+
