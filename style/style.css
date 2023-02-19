@@ -21,6 +21,11 @@ p,ul {
     padding: 0;
 }
 
+button{
+    margin: 0;
+    padding: 0;
+}
+
 .container{
     width: 1440px;
     padding-left: 32px;
@@ -163,7 +168,7 @@ color: #D8D7D7;
     width: 314px;
 }
 
-.button-wrap{
+.hero .button-wrap{
     position: relative;
     margin-left: 280px;
     display: flex;
@@ -312,6 +317,8 @@ color: #D8D7D7;
 
 .restaurant{
     padding-top: 44px;
+    padding: 26px;
+
 }
 .restaurant .title {
     font-weight: 500;
@@ -346,7 +353,7 @@ color: #D8D7D7;
     color: #121212;
 }
 
-.restaurant button{
+.restaurant .restaurant-wrap button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -374,7 +381,7 @@ color: #D8D7D7;
     margin-left: 14px;
 }
 
-.restaurant .button-wrap{
+.restaurant .restaurant-wrap .button-wrap{
     height: 68px;
     display: flex;
     align-items: flex-start;
@@ -385,6 +392,7 @@ color: #D8D7D7;
 }
 .photo-slider {
     position: relative;
+    right: 0;
     margin-top: 125px;
     display: flex;
     gap: 32px;
@@ -395,4 +403,225 @@ color: #D8D7D7;
     margin-top: 51px;
     display: flex;
     justify-content: center;
+}
+
+.gallery .button-wrap button{
+    background-color: transparent;
+    border: none;
+}
+/* -----------------Welcome------------------*/
+
+.welcome{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.welcome-container{
+    display: flex;
+}
+
+.welcome .title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    /* or 111% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.welcome .text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.welcome .text+ .text{
+    margin-top: 24px;
+}
+
+.welcome .text-wrap{
+    margin-left: 32px;
+    width: 437px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* -----------------Hotel------------------*/
+
+.hotel{
+    padding-top: 44px;
+    padding-bottom: 60px;
+    background: #121212;
+}
+
+.hotel-text-wrap {
+    display:flex;
+    align-items: center;
+}
+
+.hotel-text-wrap .title{
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 68px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+}
+
+.hotel-text-wrap .text{
+    margin-left: 32px;
+    width: 362px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+}
+
+.hotel .button-wrap{
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.hotel .button-wrap button{
+    width: 170px;
+    height: 42px;
+
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+
+    background-color: transparent;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+}
+
+.hotel .img-wrap{
+    padding-top: 80px;
+    padding-left: 158px;
+    padding-right: 158px;
+    display: grid;
+    grid-template-columns: 320px 420px 320px;
+    grid-template-rows: 260px 260px;
+    grid-column-gap: 32px;
+    grid-row-gap: 28px;
+}
+
+.hotel .img-wrap img:nth-child(3){
+    grid-column-start: 2;
+    grid-row-start: 1;
+    
+}
+
+.hotel .img-wrap img:nth-child(5){
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+/* -----------------Location-----------------*/
+
+.location{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.location-container{
+    display: flex;
+}
+
+.location iframe{
+    filter: grayscale();
+}
+
+.location-wrap{
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.location .address-wrap{
+    display: flex;
+    gap: 70px;
+}
+
+.location .tel-wrap{
+    display: flex;
+    gap: 12px;
+}
+
+.location .title{
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 68px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+
+
+
+.location .address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.location .tel{
+    display: block;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.02em;
+
+    color: #121212;
+
+}
+
+.location .tel-wrap .text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #121212;
 }
