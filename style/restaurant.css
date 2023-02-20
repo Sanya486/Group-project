@@ -160,6 +160,118 @@ color: #000000;
 
 /* -----------------Menu-----------------*/
 
+.menu{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.menu-container{
+    padding-left: 168px;
+    padding-right: 168px;
+}
+
+.menu h2{
+    margin-bottom: 100px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    /* identical to box height, or 110% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.menu .menu-category{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 74px;
+    row-gap: 56px;
+}
 
 
+.menu .menu-category .menu-category-item{
+    flex-basis: calc((100% - 74px)/2);    
+}
+
+.menu .menu-category-item .subtitle{
+
+    margin-bottom: 18px;
+
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.menu .menu-category-item .item{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    align-items: center;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid black;
+}
+
+.menu .menu-category-item .marked-text{
+    width: 320px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.02em;
+}
+
+
+.menu .menu-category-item .weight{
+    align-self: flex-start;
+
+    margin-left:auto;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.02em;
+}
+
+.menu .menu-category-item .subtext{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+
+    letter-spacing: 0.18em;
+}
+
+.menu .menu-category-item .price{
+    align-self: flex-start;
+
+    margin-left: auto;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.02em;
+}
+.menu .menu-category-wrap .menu-category-item{
+    width: 100%;
+}
+
+.menu .menu-category-wrap .menu-category-item+ .menu-category-item{
+    margin-top: 28px;
+}
 
