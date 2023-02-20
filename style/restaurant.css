@@ -25,6 +25,11 @@
 }
 /* -----------------HERO-----------------*/
 
+.hero-restaurant{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .hero-reatautant-container{
     display: flex;
     overflow: hidden;
@@ -126,4 +131,35 @@
 
     color: #121212;
     }
+
+/* -----------------Kitchen-----------------*/
+
+.kitchen{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.kitchen-wrap{
+    display: flex;
+    gap: 32px;
+}
+
+.kitchen p{
+    margin-top: 32px;
+
+    font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+/* or 133% */
+
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+/* -----------------Menu-----------------*/
+
+
+
 
