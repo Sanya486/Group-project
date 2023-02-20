@@ -62,7 +62,7 @@
                     <img class="img-hero" src="./images/unsplash_RFDP7_80v5A.jpg" alt="">
                     <div class="button-wrap">
                         <button type="button">book a room</button>
-                        <button type="button">book  a table</button>
+                        <button data-modal-open type="button">book  a table</button>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
                 </ul>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal-bt">
             <h2>BOOK <i>A TABLE</i></h2>
             <form action="">
@@ -223,7 +223,7 @@
                     <input type="datetime-local">
                     What date to book?
                 </label>
-                <button class="table-reserve" type="submit">MAKE A RESERVATION</button>
+                <button type="submit">MAKE A RESERVATION</button>
 
                 <datalist id="numbers">
                     <option >1</option>
@@ -238,8 +238,10 @@
                     <option >10</option>
                 </datalist>
             </form>
+            <button class="modal-close" data-modal-close type="button">X</button>
         </div>
     </div>
     <script src="./js/gallery.js"></script>
+    <script src="./js/modal-bt.js"></script>
 </body>
 </html>

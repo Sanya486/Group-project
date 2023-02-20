@@ -772,6 +772,7 @@ color: #D8D7D7;
 }
 
 .modal-bt{
+    position: relative;
     
     width: 628px;
     height: 476px;
@@ -850,4 +851,14 @@ color: #D8D7D7;
     text-transform: uppercase;
 
     border-radius: 32px;
+}
+
+.modal-bt .modal-close{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.is-hidden{
+    display: none;
 }
