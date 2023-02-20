@@ -16,8 +16,8 @@
         <div class="container header-container">
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="item">
-                        <a href="">Home</a>
+                    <li class="item active">
+                        <a href="./index.html">Home</a>
                     </li>
                     <li class="item">
                         <a href="">Hotel</a>
@@ -204,6 +204,42 @@
                 </ul>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal-bt">
+            <h2>BOOK <i>A TABLE</i></h2>
+            <form action="">
+                <label>
+                    <input type="text" placeholder="Your name">
+                    Who should book a table for?
+                </label>
+                <label>
+                    <input list="numbers" placeholder="number of people">
+                </label>
+                <label>
+                    <input type="tel" placeholder="+38()">
+                    phone number
+                </label>
+                <label>
+                    <input type="datetime-local">
+                    What date to book?
+                </label>
+                <button class="table-reserve" type="submit">MAKE A RESERVATION</button>
+
+                <datalist id="numbers">
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option >10</option>
+                </datalist>
+            </form>
+        </div>
+    </div>
     <script src="./js/gallery.js"></script>
 </body>
 </html>
