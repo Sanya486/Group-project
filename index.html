@@ -61,8 +61,8 @@
                     </div>
                     <img class="img-hero" src="./images/unsplash_RFDP7_80v5A.jpg" alt="">
                     <div class="button-wrap">
-                        <button type="button">book a room</button>
-                        <button data-modal-open type="button">book  a table</button>
+                        <button data-modal-br-open type="button">book a room</button>
+                        <button data-modal-bt-open type="button">book  a table</button>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,8 @@
                     <h1 class="title">restaurant</h1>
                     <p class="text">Relax and unwind with our delicious offerings, available any time of day.</p>
                     <div class="button-wrap">
-                        <button type="button">book a table</button>
-                        <button type="button">View the menu</button>
+                        <button type="button" data-modal-bt-open>book a table</button>
+                        <button type="button"> <a href="./restaurant.html#menu">View the menu</a></button>
                     </div>
                 </div>
                 <div  class="gallery">  
@@ -143,7 +143,7 @@
                     <h2 class="title">Hotel</h2>
                     <p class="text">Book your stay with us now and experience the epitome of comfort and luxury at our hotel. We guarantee you'll be thrilled with your decision.</p>
                     <div class="button-wrap">
-                        <button type="button">Book a room</button>
+                        <button data-modal-br-open type="button">Book a room</button>
                         <button type="button">View rooms</button>
                     </div>
                 </div>
@@ -182,9 +182,9 @@
         <div class="container footer-container">
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="item">Home</li>
+                    <li class="item"><a href="./index.html">Home</a></li>
                     <li class="item">Hotel</li>
-                    <li class="item">Restaurant</li>
+                    <li class="item"><a href="./restaurant.html">Restaurant</a></li>
                 </ul>
             </nav>
                 <div class="logo-wrap">
@@ -204,17 +204,17 @@
                 </ul>
         </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal-bt>
         <div class="modal-bt">
             <h2>BOOK <i>A TABLE</i></h2>
             <form action="">
                 <label>
-                    <input type="text" placeholder="Your name" title="Only letters required" required>
+                    <input type="text" placeholder="Your name" title="Only letters required" required autofocus>
                     Who should book a table for?
                 </label>
                 <label>
                     <div class="select-wrap">
-                        <select name="people-num" id="" required pattern="[0-9]">
+                        <select name="people-num" id="" required>
                             <option value="default">number of people</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -231,7 +231,7 @@
                     </div >
                 </label>
                 <label>
-                    <input type="tel" placeholder="+38()" required>
+                    <input type="tel" placeholder="+38()" pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="телефон в формате (ХХХ)XXX-XX-XX" required>
                     phone number
                 </label>
                 <label>
@@ -248,10 +248,69 @@
                 </label>
                 <button class="reservation-bt" type="submit">MAKE A RESERVATION</button>
             </form>
-            <button class="modal-close" data-modal-close type="button">X</button>
+            <button class="modal-close" data-modal-bt-close type="button">
+                <img src="./images/x.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-br>
+        <div class="modal-br">
+            <h2>BOOK <i>A ROOM</i></h2>
+            <form action="">
+                <label>
+                    <input type="text" placeholder="Your name" title="Only letters required" required autofocus>
+                    Who should book a room for?
+                </label>
+                <label>
+                    <input type="tel" placeholder="+38()" pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="телефон в формате (ХХХ)XXX-XX-XX" required>
+                    phone number
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="date" id="" required>
+                            <option value="today">today</option>
+                            <option value="tomorrow">tomorrow</option>
+                            <option value="day-after-tomorrow">day after tomorrow</option>
+                            <option value="this-week">this week</option>
+                            <option value="no-date">Haven`t decide yet</option>
+                        </select>
+                    </div >
+                    Check-in date
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="people-num" id="" required>
+                            <option value="default">25/04/2023</option>
+                            <option value="1">1</option>
+                            
+                        </select>
+                    </div >
+                    Check-out date
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="people-num" id="" required>
+                            <option value="default">double suite</option>
+                            <option value="1">double suite</option>
+                            <option value="1">single suite</option>
+                            <option value="1">triple suite</option>
+                            <option value="1">quad suite</option>
+                            <option value="1">double-double suite</option>
+                            
+                        </select>
+                    </div >
+                    Check-out date
+                </label>
+                <button class="reservation-bt" type="submit">MAKE A RESERVATION</button>
+            </form>
+            <button class="modal-close" data-modal-br-close type="button">
+                <img src="./images/x.svg" alt="">
+            </button>
         </div>
     </div>
     <script src="./js/gallery.js"></script>
     <script src="./js/modal-bt.js"></script>
+    <script src="./js/modal-br.js"></script>
 </body>
 </html>
