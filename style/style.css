@@ -783,9 +783,10 @@ color: #D8D7D7;
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
-    /* background-color: #121212; */
-    background-color: #F6F6F6;
+    background-color: #121212;
+    
 }
+
 
 .modal-bt h2{
     margin-bottom: 60px;
@@ -798,7 +799,7 @@ color: #D8D7D7;
     letter-spacing: -0.02em;
     text-transform: uppercase;
 
-    /* color: #F7F7F7; */
+    color: #F7F7F7;
 }
 
 .modal-bt form{
@@ -812,20 +813,87 @@ color: #D8D7D7;
     flex-basis: calc((100% - 32px)/2);
 
     font-weight: 400;
-font-size: 8px;
-line-height: 12px;
-/* identical to box height, or 150% */
+    font-size: 8px;
+    line-height: 12px;
+    /* identical to box height, or 150% */
 
-letter-spacing: 0.18em;
-text-transform: uppercase;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 
-color: #D8D7D7;
+    color: #D8D7D7;
 }
 
 .modal-bt form label input{
     width: 100%;
     height: 36px;
+
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+    background-color: transparent;
+
+    border: none;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    
+    outline: none;
 }
+
+.modal-bt form .select-wrap{
+    position: relative;
+}
+
+.modal-bt form label select{
+    
+    width: 100%;
+    height: 36px;
+
+    
+    appearance: none;
+
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #F7F7F7;
+    background-color: transparent;
+
+    border: none;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    outline: none;
+    
+}
+.modal-bt form label .select-wrap::before{
+    content: "";
+    position: absolute;
+    width:20px;
+    height: 20px;
+    background-image: url(../images/chevron-down.svg);
+    top: 0;
+    right: 0;
+
+    pointer-events: none;
+}
+
+.modal-bt form label select option{
+    background-color: #121212;
+}
+
 .modal-bt form label input::placeholder{
     font-weight: 500;
     font-size: 14px;
@@ -834,14 +902,22 @@ color: #D8D7D7;
 
     letter-spacing: -0.02em;
     text-transform: uppercase;
+
+    color: #F7F7F7;
 }
 
-.modal-bt button[type="submit"]{
+
+
+
+
+.modal-bt .reservation-bt{
     display: block;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     padding: 14px 133px;
+    
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -849,8 +925,12 @@ color: #D8D7D7;
 
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    color: #F7F7F7;
 
+    border: 0.8px solid #F7F7F7;
     border-radius: 32px;
+
+    background-color: transparent;
 }
 
 .modal-bt .modal-close{

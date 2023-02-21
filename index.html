@@ -204,39 +204,49 @@
                 </ul>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal-bt">
             <h2>BOOK <i>A TABLE</i></h2>
             <form action="">
                 <label>
-                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Your name" title="Only letters required" required>
                     Who should book a table for?
                 </label>
                 <label>
-                    <input list="numbers" placeholder="number of people">
+                    <div class="select-wrap">
+                        <select name="people-num" id="" required pattern="[0-9]">
+                            <option value="default">number of people</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="9">10</option>
+                            <option value="more">More than 10</option>
+                        </select>
+                    </div >
                 </label>
                 <label>
-                    <input type="tel" placeholder="+38()">
+                    <input type="tel" placeholder="+38()" required>
                     phone number
                 </label>
                 <label>
-                    <input type="datetime-local">
+                    <div class="select-wrap">
+                        <select name="date" id="" required>
+                            <option value="today">today</option>
+                            <option value="tomorrow">tomorrow</option>
+                            <option value="day-after-tomorrow">day after tomorrow</option>
+                            <option value="this-week">this week</option>
+                            <option value="no-date">Haven`t decide yet</option>
+                        </select>
+                    </div >
                     What date to book?
                 </label>
-                <button type="submit">MAKE A RESERVATION</button>
-
-                <datalist id="numbers">
-                    <option >1</option>
-                    <option >2</option>
-                    <option >3</option>
-                    <option >4</option>
-                    <option >5</option>
-                    <option >6</option>
-                    <option >7</option>
-                    <option >8</option>
-                    <option >9</option>
-                    <option >10</option>
-                </datalist>
+                <button class="reservation-bt" type="submit">MAKE A RESERVATION</button>
             </form>
             <button class="modal-close" data-modal-close type="button">X</button>
         </div>
