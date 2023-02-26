@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" style="display: none;">
         <div class="container header-container">
             <nav class="navigation">
                 <ul class="navigation-list">
@@ -51,7 +51,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" style="display: none;">
             <div class="container hero-container">
                 <h1 class="title">Mimino</h1>
                 <div class="content-container">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" style="display: none;">
             <div class="container">
                 <ul class="about-list">
                     <li class="item">
@@ -93,7 +93,7 @@
         </section>
         <section class="restaurant">
             <div class="container">
-                <div class="restaurant-wrap">
+                <div class="restaurant-wrap" style="display: none;">
                     <h1 class="title">restaurant</h1>
                     <p class="text">Relax and unwind with our delicious offerings, available any time of day.</p>
                     <div class="button-wrap">
@@ -103,16 +103,68 @@
                 </div>
                 <div  class="gallery">  
                     <div class="photo-slider">
-                        <img src="./images/restaurant/image11 .jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image22.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-33.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image44.jpg" alt="" class="img-slider">
-                        <img src="/images/restaurant/image55.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-1.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-2.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-3.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-4.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image.jpg" alt="" class="img-slider">
+                        <picture class="img-js">
+                            <source 
+                            srcset="./images/restaurant/image11.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source 
+                            srcset="./images/restaurant-mobile/image.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image11.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image22.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image-1.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source  
+                            srcset="./images/restaurant-mobile/image-1.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image22.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image33.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source  
+                            srcset="./images/restaurant-tablet/image-2.jpg" type="image/jpeg" 
+                            media="(min-width:768px)">
+                            <source 
+                            srcset="./images/restaurant-mobile/image-2.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image33.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image44.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image-3.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source 
+                            srcset="./images/restaurant-mobile/image-3.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image44.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image55.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image-4.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source  
+                            srcset="./images/restaurant-mobile/image-4.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image55.jpg" alt="">
+                        </picture>
+                        
+                        
                     </div>
                     <div class="button-wrap">
                         <button class="button-left" type="button">
@@ -125,7 +177,7 @@
                 </div>  
             </div>
         </section>
-        <section class="welcome">
+        <section class="welcome" style="display: none;">
             <div class="container welcome-container">
                 <img src="./images/welcome.jpg" alt="">
                 <div class="text-wrap">
@@ -137,7 +189,7 @@
                 </div>
             </div>
         </section>
-        <section class="hotel">
+        <section class="hotel" style="display: none;">
             <div class="container">
                 <div class="hotel-text-wrap">
                     <h2 class="title">Hotel</h2>
@@ -156,7 +208,7 @@
                 </div>
             </div>
         </section>
-        <section class="location">
+        <section class="location" style="display: none;">
             <div class="container location-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.9226606192624!2d34.525108634210476!3d49.599207886739215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JHQuNGA0Y7Qt9C-0LLQsCwgMTUsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e0!3m2!1sru!2sua!4v1676822870559!5m2!1sru!2sua" width="640" height="524" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="location-wrap">
@@ -178,7 +230,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer"> 
+    <footer class="footer" style="display: none;"> 
         <div class="container footer-container">
             <nav class="navigation">
                 <ul class="navigation-list">

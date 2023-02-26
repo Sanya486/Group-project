@@ -35,7 +35,7 @@ img {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   padding-left: 32px;
   padding-right: 32px;
   margin-left: auto;
@@ -444,6 +444,25 @@ img {
 
   cursor: pointer;
 }
+
+@media screen and (max-width:768px){
+
+
+  .container{
+    max-width: 704px; 
+
+  }
+} 
+
+@media screen and (max-width:374px){
+  .photo-slider{
+    gap: 20px;
+  }
+  .container{
+    max-width: 335px; 
+
+  }
+} 
 /* -----------------Welcome------------------*/
 
 .welcome {
