@@ -1,10 +1,8 @@
 let offset = 0;
-let gap = 32;
 const photoSlider = document.querySelector('.photo-slider');
-const viewportWidth = document.body.clientWidth;
+let viewportWidth = document.body.clientWidth;
 const buttonRight = document.querySelector('.button-right');
 const buttonLeft = document.querySelector('.button-left');
-const imgWidth = document.querySelector('.width-js').clientWidth;
 
 if (viewportWidth >= 1440) {
   buttonRight.addEventListener('click', function () {
@@ -39,14 +37,14 @@ if (viewportWidth >= 1440) {
   });
 } else {
   buttonRight.addEventListener('click', function () {
-    offset = offset + (imgWidth + gap);
-    if (offset > (imgWidth + gap)*3) {
+    offset = offset + 177;
+    if (offset > 177*3) {
       offset = 0;
     }
     photoSlider.style.right = offset + 'px';
   });
   buttonLeft.addEventListener('click', function () {
-    offset =  offset - (imgWidth - gap);
+    offset =  offset - 177;
     if (offset < 0) {
       offset = 0;
     }

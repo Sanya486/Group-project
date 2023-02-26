@@ -358,7 +358,7 @@ img {
   line-height: 68px;
   /* identical to box height, or 100% */
 
-  letter-spacing: -0.02em;
+      letter-spacing: -0.02em;
   text-transform: uppercase;
 
   color: #121212;
@@ -445,7 +445,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1440px){
 
 
   .container{
@@ -454,7 +454,7 @@ img {
   }
 } 
 
-@media screen and (max-width:374px){
+@media screen and (max-width:767px){
   .photo-slider{
     gap: 20px;
   }
