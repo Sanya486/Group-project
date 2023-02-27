@@ -396,3 +396,8 @@ color: #D8D7D7;
     display: flex;
     justify-content: center;
 }
+
+.svg-icon{
+    fill:#121212;
+    stroke: #121212;
+}
