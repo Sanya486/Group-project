@@ -16,9 +16,15 @@
         <div class="container header-container">
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="item">Home</li>
-                    <li class="item">Hotel</li>
-                    <li class="item">Restaurant</li>
+                    <li class="item active">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="item">
+                        <a href="">Hotel</a>
+                    </li>
+                    <li class="item">
+                        <a href="./restaurant.html">Restaurant</a>
+                    </li>
                 </ul>
             </nav>
                 <div class="logo-wrap">
@@ -26,9 +32,21 @@
                     <h2 class="suptitle">restaurant-hotel complex</h2>
                 </div>
                 <ul class="social-list">
-                    <li class="item">Inst</li>
-                    <li class="item">FB</li>
-                    <li class="item">TWitter</li>
+                    <li class="item">
+                        <a href="">
+                            <img src="./images/Header-social/instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="./images/Header-social/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            <img src="./images/Header-social/twitter.svg" alt="">
+                        </a>
+                    </li>
                 </ul>
         </div>
     </header>
@@ -43,13 +61,13 @@
                     </div>
                     <img class="img-hero" src="./images/unsplash_RFDP7_80v5A.jpg" alt="">
                     <div class="button-wrap">
-                        <button type="button">book a room</button>
-                        <button type="button">book  a table</button>
+                        <button data-modal-br-open type="button">book a room</button>
+                        <button data-modal-bt-open type="button">book  a table</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" >
             <div class="container">
                 <ul class="about-list">
                     <li class="item">
@@ -79,82 +97,272 @@
                     <h1 class="title">restaurant</h1>
                     <p class="text">Relax and unwind with our delicious offerings, available any time of day.</p>
                     <div class="button-wrap">
-                        <button type="button">book a table</button>
-                        <button type="button">View the menu</button>
+                        <button type="button" data-modal-bt-open>book a table</button>
+                        <button type="button"> <a href="./restaurant.html#menu">View the menu</a></button>
                     </div>
                 </div>
-                <div class="gallery">   
+                <div  class="gallery">  
                     <div class="photo-slider">
-                        <img src="./images/restaurant/image11 .jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image22.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-33.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image44.jpg" alt="" class="img-slider">
-                        <img src="/images/restaurant/image55.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-1.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-2.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-3.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image-4.jpg" alt="" class="img-slider">
-                        <img src="./images/restaurant/image.jpg" alt="" class="img-slider">
+                        <picture class="img-js">
+                            <source 
+                            srcset="./images/restaurant/image11.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source 
+                            srcset="./images/restaurant-mobile/image.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image11.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image22.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image-1.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source  
+                            srcset="./images/restaurant-mobile/image-1.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image22.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image33.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source  
+                            srcset="./images/restaurant-tablet/image-2.jpg" type="image/jpeg" 
+                            media="(min-width:768px)">
+                            <source 
+                            srcset="./images/restaurant-mobile/image-2.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image33.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image44.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image-3.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source 
+                            srcset="./images/restaurant-mobile/image-3.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image44.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <source 
+                            srcset="./images/restaurant/image55.jpg" type="image/jpeg"
+                            media="(min-width:1440px)">
+                            <source 
+                            srcset="./images/restaurant-tablet/image-4.jpg" type="image/jpeg"
+                            media="(min-width:768px)">
+                            <source  
+                            srcset="./images/restaurant-mobile/image-4.jpg" type="image/jpeg"
+                            media="(max-width:767px)">
+                            <img src="./images/restaurant/image55.jpg" alt="">
+                        </picture>
+                        
+                        
                     </div>
                     <div class="button-wrap">
-                        <button class="button-left" type="button">left</button>
+                        <button class="button-left" type="button">
+                            <img  src="/images/button-l.svg" alt="">
+                        </button>
                         <button class="button-right" type="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
-                                <path stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14 25 7-7-7-7"/>
-                            </svg>
+                            <img  src="/images/button-r.svg" alt="">
                         </button>
                     </div>
                 </div>  
             </div>
         </section>
-        <section class="welcome">
-            <div class="container">
-                <img src="" alt="">
-                <h2>Welcome to the epitome of luxury and comfort</h2>
-                <p>Our hotel rooms are elegantly designed with an eye for detail, ensuring that you have everything you need for a relaxing and rejuvenating stay.</p>
-                <p>Each room is equipped with the latest amenities, including plush bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker to help you start your day right. Our spacious bathrooms feature luxurious toiletries and towels, so you can pamper yourself in complete privacy.</p>
+        <section class="welcome" >
+            <div class="container welcome-container">
+                <img src="./images/welcome.jpg" alt="">
+                <div class="text-wrap">
+                    <h2 class="title">Welcome to the epitome of luxury and comfort</h2>
+                    <div>
+                        <p class="text">Our hotel rooms are elegantly designed with an eye for detail, ensuring that you have everything you need for a relaxing and rejuvenating stay.</p>
+                        <p class="text">Each room is equipped with the latest amenities, including plush bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker to help you start your day right. Our spacious bathrooms feature luxurious toiletries and towels, so you can pamper yourself in complete privacy.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="hotel">
             <div class="container">
-                <h2></h2>
-                <p></p>
-                <button type="button"></button>
-                <button type="button"></button>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <div class="hotel-text-wrap">
+                    <h2 class="title">Hotel</h2>
+                    <p class="text">Book your stay with us now and experience the epitome of comfort and luxury at our hotel. We guarantee you'll be thrilled with your decision.</p>
+                    <div class="button-wrap">
+                        <button data-modal-br-open type="button">Book a room</button>
+                        <button type="button">View rooms</button>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <img src="./images/Hotel/bottles.jpg" alt="">
+                    <img src="./images/Hotel/bath.jpg" alt="">
+                    <img src="./images/Hotel/bad.jpg" alt="">
+                    <img src="./images/Hotel/sink.jpg" alt="">
+                    <img src="./images/Hotel/tubs.jpg" alt="">
+                </div>
             </div>
         </section>
         <section class="location">
-            <div class="container">
-                <h2></h2>
-                <iframe src="" frameborder="0"></iframe>
-                <p></p>
-                <p></p>
+            <div class="container location-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2585.9226606192624!2d34.525108634210476!3d49.599207886739215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JHQuNGA0Y7Qt9C-0LLQsCwgMTUsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e0!3m2!1sru!2sua!4v1676822870559!5m2!1sru!2sua" width="640" height="524" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="location-wrap">
+                    <h2 class="title">location</h2>
+                    <div class="address-wrap">
+                        <address class="address">
+                            <a href="https://goo.gl/maps/1MPY6mJMo9btD4Nj8">Ukraine, Poltava, <br>
+                            St. Marshal Biryuzov, 15</a>
+                        </address>
+                        <div class="tel-wrap">
+                            <p class="text">call us:</p>
+                            <div>
+                                <a class="tel" href="tel:095559533">(095) 555 95 33</a>
+                                <a class="tel" href="tel:0668491089">(066) 849 10 89</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer> 
-        <div class="container">
-            <nav>
+    <footer class="footer"> 
+        <div class="container footer-container">
+            <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="item">Home</li>
+                    <li class="item"><a href="./index.html">Home</a></li>
                     <li class="item">Hotel</li>
-                    <li class="item">Restaurant</li>
+                    <li class="item"><a href="./restaurant.html">Restaurant</a></li>
                 </ul>
             </nav>
-                <h1>Mimino</h1>
-                <h2>restaurant-hotel complex</h2>
+                <div class="logo-wrap">
+                    <h1 class="title">Mimino</h1>
+                    <h2 class="suptitle">restaurant-hotel complex</h2>
+                </div>
                 <ul class="social-list">
-                    <li class="item">Inst</li>
-                    <li class="item">FB</li>
-                    <li class="item">TWitter</li>
+                    <li class="item">
+                        <img src="./images/Social/instagram.svg" alt="">
+                    </li>
+                    <li class="item">
+                        <img src="./images/Social/facebook.svg" alt="">
+                    </li>
+                    <li class="item">
+                        <img src="./images/Social/twitter.svg" alt="">
+                    </li>
                 </ul>
         </div>
     </footer>
-    <script src="./js/gallery.js"></script>
+    <div class="backdrop is-hidden" data-modal-bt>
+        <div class="modal-bt">
+            <h2>BOOK <i>A TABLE</i></h2>
+            <form action="">
+                <label>
+                    <input type="text" placeholder="Your name" title="Only letters required" required autofocus>
+                    Who should book a table for?
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="people-num" id="" required>
+                            <option value="default">number of people</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="9">10</option>
+                            <option value="more">More than 10</option>
+                        </select>
+                    </div >
+                </label>
+                <label>
+                    <input type="tel" placeholder="+38()" pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="телефон в формате (ХХХ)XXX-XX-XX" required>
+                    phone number
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="date" id="" required>
+                            <option value="today">today</option>
+                            <option value="tomorrow">tomorrow</option>
+                            <option value="day-after-tomorrow">day after tomorrow</option>
+                            <option value="this-week">this week</option>
+                            <option value="no-date">Haven`t decide yet</option>
+                        </select>
+                    </div >
+                    What date to book?
+                </label>
+                <button class="reservation-bt" type="submit">MAKE A RESERVATION</button>
+            </form>
+            <button class="modal-close" data-modal-bt-close type="button">
+                <img src="./images/x.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-br>
+        <div class="modal-br">
+            <h2>BOOK <i>A ROOM</i></h2>
+            <form action="">
+                <label>
+                    <input type="text" placeholder="Your name" title="Only letters required" required autofocus>
+                    Who should book a room for?
+                </label>
+                <label>
+                    <input type="tel" placeholder="+38()" pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="телефон в формате (ХХХ)XXX-XX-XX" required>
+                    phone number
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="date" id="" required>
+                            <option value="today">today</option>
+                            <option value="tomorrow">tomorrow</option>
+                            <option value="day-after-tomorrow">day after tomorrow</option>
+                            <option value="this-week">this week</option>
+                            <option value="no-date">Haven`t decide yet</option>
+                        </select>
+                    </div >
+                    Check-in date
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="people-num" id="" required>
+                            <option value="default">25/04/2023</option>
+                            <option value="1">1</option>
+                            
+                        </select>
+                    </div >
+                    Check-out date
+                </label>
+                <label>
+                    <div class="select-wrap">
+                        <select name="people-num" id="" required>
+                            <option value="default">double suite</option>
+                            <option value="1">double suite</option>
+                            <option value="1">single suite</option>
+                            <option value="1">triple suite</option>
+                            <option value="1">quad suite</option>
+                            <option value="1">double-double suite</option>
+                            
+                        </select>
+                    </div >
+                    Check-out date
+                </label>
+                <button class="reservation-bt" type="submit">MAKE A RESERVATION</button>
+            </form>
+            <button class="modal-close" data-modal-br-close type="button">
+                <img src="./images/x.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <script src="./js/adapt-gallery.js"></script>
+    <script src="./js/modal-bt.js"></script>
+    <script src="./js/modal-br.js"></script>
 </body>
 </html>
